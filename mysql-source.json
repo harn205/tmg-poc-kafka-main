@@ -1,0 +1,21 @@
+{
+  "name": "mysql-source-kafka",
+  "config": {
+    "connector.class": "io.debezium.connector.sqlserver.SqlServerConnector",
+    "database.hostname": "tmg-poc-sqlserver-apse1.cl2siswokevp.ap-southeast-1.rds.amazonaws.com",
+    "database.port": "1433",
+    "database.user": "admin",
+    "database.password": "Inteltion7",
+    "database.dbname": "tmg_poc",
+    "database.server.name": "kafka-class-db-001",
+    "table.whitelist": "poc.test",
+    "database.history.kafka.bootstrap.servers": "broker:9092",
+    "database.history.kafka.topic": "sqlserver-movies",
+    "decimal.handling.mode": "double",
+    "include.schema.changes": "true",
+    "key.converter": "io.confluent.connect.avro.AvroConverter",
+    "value.converter": "io.confluent.connect.avro.AvroConverter",
+    "key.converter.schema.registry.url": "http://schema-registry:8081",
+    "value.converter.schema.registry.url": "http://schema-registry:8081",
+    "database.encrypt": "false"
+  }
