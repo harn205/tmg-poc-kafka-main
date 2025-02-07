@@ -1,20 +1,21 @@
 {
-  "name": "mysql-source-kafka",
-  "config": {
-    "connector.class": "io.debezium.connector.mysql.MySqlConnector",
-    "database.hostname": "tmg-poc-mysql-apse1.cl2siswokevp.ap-southeast-1.rds.amazonaws.com",
-    "database.port": "3306",
-    "database.user": "admin",
-    "database.password": "Inteltion7",
-    "database.server.name": "kafka-class-db-001",
-    "table.whitelist": "demo.movies",
-    "database.history.kafka.bootstrap.servers": "broker:9092",
-    "database.history.kafka.topic": "movies",
-    "decimal.handling.mode": "double",
-    "include.schema.changes": "true",
-    "key.converter": "io.confluent.connect.avro.AvroConverter",
-    "value.converter": "io.confluent.connect.avro.AvroConverter",
-    "key.converter.schema.registry.url": "http://schema-registry:8081",
-    "value.converter.schema.registry.url": "http://schema-registry:8081"
+    "name": "mysql-source-kafka",
+    "config": {
+      "connector.class": "io.debezium.connector.mysql.MySqlConnector",
+      "database.hostname": "tmg-poc-mysql-apse1.cl2siswokevp.ap-southeast-1.rds.amazonaws.com",
+      "database.port": "3306",
+      "database.user": "admin",
+      "database.password": "*****",
+      "database.server.name": "kafka-class-db-001",
+      "table.whitelist": "demo.movies",
+      "database.history.kafka.bootstrap.servers": "broker:9092",
+      "database.history.kafka.topic": "movies",
+      "decimal.handling.mode": "double",
+      "include.schema.changes": "true",
+      "key.converter": "org.apache.kafka.connect.json.JsonConverter",
+      "value.converter": "org.apache.kafka.connect.json.JsonConverter",
+      "key.converter.schema.registry.url": "http://schema-registry:8081",
+      "value.converter.schema.registry.url": "http://schema-registry:8081"
+    }
   }
-}
+  
