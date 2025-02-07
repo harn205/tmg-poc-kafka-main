@@ -1,5 +1,7 @@
 #Kafka poc template
+delete
 
+sudo docker system prune -a --volumes
 
 #VM CLI
 <pre><code>ls -lrt</code></pre>
