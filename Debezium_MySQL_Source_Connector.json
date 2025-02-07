@@ -5,7 +5,7 @@
       "database.hostname": "tmg-poc-mysql-apse1.cl2siswokevp.ap-southeast-1.rds.amazonaws.com",
       "database.port": "3306",
       "database.user": "admin",
-      "database.password": "Inteltion7",
+      "database.password": "****",
       "database.server.name": "kafka-class-db-001",
       "table.whitelist": "demo.movies",
       "database.history.kafka.bootstrap.servers": "broker:9092",
