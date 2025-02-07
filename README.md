@@ -13,6 +13,11 @@
 
 #Docker compose down</code></pre>
 <pre><code>sudo docker-compose down</code></pre>
+#delete folder
+<pre><code>rm -rf foldername</code></pre>
+
+#connector log
+<pre><code>sudo docker log connect</code></pre>
 
 
 
