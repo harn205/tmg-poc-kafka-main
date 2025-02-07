@@ -5,7 +5,7 @@
     "database.hostname": "tmg-poc-sqlserver-apse1.cl2siswokevp.ap-southeast-1.rds.amazonaws.com", 
     "database.port": "1433",
     "database.user": "admin",
-    "database.password": "137982",
+    "database.password": "****",
     "database.server.name": "kafka-class-db-001",
     "database.dbname": "demo",
     "table.whitelist": "dbo.movies",
