@@ -2,10 +2,10 @@
   "name": "mysql-source-kafka",
   "config": {
     "connector.class": "io.debezium.connector.mysql.MySqlConnector",
-    "database.hostname": "34.142.141.164",
+    "database.hostname": "tmg-poc-mysql-apse1.cl2siswokevp.ap-southeast-1.rds.amazonaws.com",
     "database.port": "3306",
-    "database.user": "root",
-    "database.password": "kafka-class-db-001",
+    "database.user": "admin",
+    "database.password": "Inteltion7",
     "database.server.name": "kafka-class-db-001",
     "table.whitelist": "demo.movies",
     "database.history.kafka.bootstrap.servers": "broker:9092",
