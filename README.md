@@ -11,7 +11,8 @@
 #Web UI kafka external IP:port
 <external IP>:9021
 
-
+#Docker compose down</code></pre>
+<pre><code>sudo docker-compose down</code></pre>
 
 
 
