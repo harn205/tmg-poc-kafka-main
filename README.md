@@ -17,7 +17,7 @@
 <pre><code>rm -rf foldername</code></pre>
 
 #connector log
-<pre><code>sudo docker log connect</code></pre>
+<pre><code>sudo docker logs connect</code></pre>
 
 
 
