@@ -1,0 +1,20 @@
+{
+  "name": "sqlserver-source-kafka",
+  "config": {
+    "connector.class": "io.debezium.connector.sqlserver.SqlServerConnector",
+    "database.hostname": "tmg-poc-sqlserver-apse1.cl2siswokevp.ap-southeast-1.rds.amazonaws.com", 
+    "database.port": "1433",
+    "database.user": "admin",
+    "database.password": "137982",
+    "database.server.name": "kafka-class-db-001",
+    "database.dbname": "demo",
+    "table.whitelist": "dbo.movies",
+    "database.history.kafka.bootstrap.servers": "broker:9092",
+    "database.history.kafka.topic": "movies",
+    "include.schema.changes": "true",
+    "key.converter": "org.apache.kafka.connect.json.JsonConverter",
+    "value.converter": "org.apache.kafka.connect.json.JsonConverter",
+    "key.converter.schema.registry.url": "http://schema-registry:8081",
+    "value.converter.schema.registry.url": "http://schema-registry:8081"
+  }
+}
